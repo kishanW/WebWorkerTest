@@ -45,17 +45,17 @@ input[type="text"]:focus{
     text-transform: uppercase;
 }
 .notification.warning {
-    background-color: #FFCE54;
+    background-color: #FF9800;
     color: #fff;
 }
 
 .notification.success {
-    background-color: #A0D468;
+    background-color: #4CAF50;
     color: #fff;
 }
 
 .notification.info {
-    background-color: #4FC1E9;
+    background-color: #03A9F4;
     color: #fff;
 }
 
@@ -100,17 +100,17 @@ input[type="text"]:focus{
 }
 
 #messages li.warning {
-    background-color: #FFCE54;
+    background-color: #FF9800;
     color: #fff;
 }
 
 #messages li.success {
-    background-color: #A0D468;
+    background-color: #4CAF50;
     color: #fff;
 }
 
 #messages li.info {
-    background-color: #4FC1E9;
+    background-color: #03A9F4;
     color: #fff;
 }
 
