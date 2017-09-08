@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Worker Test</title>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/site.js"></script>
+    <script src="js/appviewmodel.js"></script>
+</head>
+
+<body>
+    <div id="app-connectivity" data-bind="attr: {connected: IsOnline}" data-bind="text: IsOnline"></div>
+    <br>
+    <div class="warning notification" data-bind="visible: !IsOnline()">
+        We're offline!
+    </div>
+    
+
+    <div class="clearfix"></div>
+
+    <div class="content-section">
+        <div class="section-title">Messages</div>
+        <div class="section-content">
+            <ul id="messages">
+                <li class="warning">
+                    Warning message
+                </li>
+                <li class="info">
+                    Info message
+                </li>
+                <li class="success">
+                    Success message
+                </li>
+                <li class="error">
+                    Error message
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var vm = new app.ViewModels.Main();
+    app.viewmodel = vm;
+    ko.applyBindings(app.viewmodel);
+</script>
