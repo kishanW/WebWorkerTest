@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpack Test</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <script src="./dist/site.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <h1>web pack test here</h1>
+            </div>
+            <div class="col-lg-3">
+                <ul id="messages"></ul>
+            </div>
+            <div class="col-lg-3">
+                <p>
+                    <h4>Summary</h4>
+                    <ul>
+                        <li>
+                            <code>module.essmbler.js</code> will be the entry point.
+                        </li>
+                        <li>
+                            <code>module1</code> &
+                            <code>module2</code> js files are the modules that are being loaded.
+                        </li>
+                        <li>
+                            <code>jquery</code> is being loaded as a npm module.
+                        </li>
+                    </ul>
+                    <hr>
+                    <h4>How to start the project</h4>
+                    <ul>
+                        <li>browser to the repo folder in
+                            <code>git bash</code>
+                        </li>
+                        <li>type
+                            <code>npm install</code>
+                        </li>
+                        <li>after that command is done running type command
+                            <code>webpack</code>
+                        </li>
+                        <li>the output js will be in <code>./dist</code> directory.</li>
+                        <li>open <code>webpacktest.htm</code></li>
+                    </ul>
+
+                    <hr>
+
+                </p>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        font-family: 'Roboto Condensed', sans-serif;
+        outline: none !important;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box !important;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    #messages {
+        list-style: none;
+        margin: 0;
+    }
+
+    #messages li {
+        width: 100%;
+        padding: 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        background-color: #ED5565;
+        color: #fff;
+        margin: 0 0 10px 0;
+    }
+</style>

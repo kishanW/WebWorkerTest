@@ -1,0 +1,29 @@
+{
+  "name": "webworkertst",
+  "version": "1.0.0",
+  "description": "Testing web worker stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishanW/WebWorkerTest.git"
+  },
+  "keywords": [
+    "web",
+    "worker",
+    "js",
+    "css"
+  ],
+  "author": "KishanW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kishanW/WebWorkerTest/issues"
+  },
+  "homepage": "https://github.com/kishanW/WebWorkerTest#readme",
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "webpack": "^3.6.0"
+  }
+}
